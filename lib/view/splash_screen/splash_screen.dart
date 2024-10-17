@@ -21,7 +21,7 @@ class _SplashScreenState extends State<SplashScreen> {
               width: 124.99,
               "assets/images/Group 34010.png"),
               SizedBox(width: 9,),
-              Text("Stylish",style: TextStyle(color: Colors.red,fontSize: 40,fontWeight: FontWeight.bold),)
+              Text("Stylish",style: TextStyle(color: Colors.red,fontSize: 40,fontWeight: FontWeight.bold,fontFamily: 'LibreCaslon'),)
           ],
         ),
       )
