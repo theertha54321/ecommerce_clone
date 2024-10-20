@@ -1,4 +1,11 @@
+
+import 'dart:async';
+
+import 'package:ecommerce_clone/utils/color_constants.dart';
+import 'package:ecommerce_clone/utils/image_constants.dart';
+import 'package:ecommerce_clone/view/onboarding_screen/onboarding_screen.dart';
 import 'package:flutter/material.dart';
+import 'package:google_fonts/google_fonts.dart';
 
 class SplashScreen extends StatefulWidget {
   const SplashScreen({super.key});
@@ -8,6 +15,16 @@ class SplashScreen extends StatefulWidget {
 }
 
 class _SplashScreenState extends State<SplashScreen> {
+@override
+  void initState() {
+    Timer(Duration(seconds: 3), (){
+      Navigator.pushReplacement(context, MaterialPageRoute(builder: (context)=>
+      OnboardingScreen()
+      ));
+    });
+    super.initState();
+  }
+  
   @override
   Widget build(BuildContext context) {
     return Scaffold(
@@ -17,11 +34,18 @@ class _SplashScreenState extends State<SplashScreen> {
           
           children: [
             Image.asset(
+              ImageConstants.MyAPPLOGO,
               height: 100,
               width: 124.99,
-              "assets/images/Group 34010.png"),
+              fit: BoxFit.fill,
+              ),
               SizedBox(width: 9,),
-              Text("Stylish",style: TextStyle(color: Colors.red,fontSize: 40,fontWeight: FontWeight.bold,fontFamily: 'LibreCaslon'),)
+              Text("Stylish",style: GoogleFonts.libreCaslonText(
+
+                fontSize: 40,
+                color: ColorConstants.PRIMARY,
+                fontWeight: FontWeight.bold 
+              ),)
           ],
         ),
       )
