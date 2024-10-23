@@ -1,5 +1,6 @@
 import 'package:ecommerce_clone/utils/color_constants.dart';
 import 'package:ecommerce_clone/view/forgot_password_screen/forgot_password_screen.dart';
+import 'package:ecommerce_clone/view/get_started_screen/get_started_screen.dart';
 import 'package:ecommerce_clone/view/global_widgets/custom_button.dart';
 import 'package:ecommerce_clone/view/global_widgets/custom_input_field.dart';
 import 'package:ecommerce_clone/view/global_widgets/custom_login.dart';
@@ -49,9 +50,15 @@ class _LoginScreenState extends State<LoginScreen> {
                 ],
               ),
               SizedBox(height: 52,),
-              CustomButton(data: "Login",),
+              CustomButton(data: "Login",onButtonPressed: (){Navigator.pushAndRemoveUntil(context, MaterialPageRoute(
+                builder:(context)=> GetStartedScreen()
+                
+                
+                ),
+                (route)=>false);
+                },),
               SizedBox(height: 75,),
-              CustomLogin(datas: "Sign Up",),
+              CustomLogin(datas: "Sign Up",d: "Create Account",gotoFirst: true,),
               
 
 

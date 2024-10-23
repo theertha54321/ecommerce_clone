@@ -6,14 +6,15 @@ import 'package:font_awesome_flutter/font_awesome_flutter.dart';
 import 'package:google_fonts/google_fonts.dart';
 
 class CustomLogin extends StatelessWidget {
-
+  bool gotoFirst=true;
   String datas;
+  String d;
    CustomLogin({
+    required this.gotoFirst,
+    required this.d,
     required this.datas,
     super.key,
   });
-
-  bool gotoFirst=true;
 
   @override
   Widget build(BuildContext context) {
@@ -77,7 +78,7 @@ class CustomLogin extends StatelessWidget {
             children: [
               Text(
                 style: GoogleFonts.montserrat( color: ColorConstants.PRIMARY8,fontSize: 14),
-                "Create An Account"),
+                d),
               SizedBox(width: 5,),
               InkWell(
                 onTap: (){
@@ -89,11 +90,11 @@ class CustomLogin extends StatelessWidget {
                   ));
                     }
                     else{
-                      Navigator.push(context, MaterialPageRoute(
-                  builder:(context)=>LoginScreen()
-                  
-                  ));
+                      Navigator.pop(context);
+              
                     }
+                    
+
                     
                   },
                   

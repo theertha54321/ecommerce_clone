@@ -48,9 +48,9 @@ class _CreateAccountScreenState extends State<CreateAccountScreen> {
                 ],
               ),
               SizedBox(height: 38,),
-              CustomButton(data: "Create Account"),
+              CustomButton(data: "Create Account",onButtonPressed: (){},),
               SizedBox(height: 40,),
-              CustomLogin(datas: "Login",),
+              CustomLogin(datas: "Login",d:"I already have an account",gotoFirst: false,),
               
 
 

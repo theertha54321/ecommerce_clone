@@ -39,7 +39,9 @@ class _LoginScreenState extends State<ForgotPasswordScreen> {
                 
               
               SizedBox(width: 5,),
-              Text("We will send you a message to set or reset your new password",style: GoogleFonts.montserrat( color: ColorConstants.PRIMARY5),),
+              Text(
+                maxLines: 2,
+                "We will send you a message to set or reset your new password",style: GoogleFonts.montserrat( color: ColorConstants.PRIMARY5),),
                 ]
               ),
               SizedBox(height: 26,),
