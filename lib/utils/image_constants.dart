@@ -3,4 +3,6 @@ class ImageConstants{
   static const ONBOARDIMAGE ="assets/images/fashion shop-rafiki 1.png";
   
   static const GETSTARTEDIMAGE ="assets/images/unsplash_fouVDmGXoPI.png";
+  static const CAVIMAGE ="assets/images/cavatar.png";
+  
 }

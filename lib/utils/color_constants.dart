@@ -12,4 +12,6 @@ class ColorConstants{
   static const Color PRIMARY8 = Color(0xff575757);
   static const Color PRIMARY9 = Color(0xff3D4DA6);
   static const Color PRIMARY10 = Color(0xffFF4B26);
+  static const Color PRIMARY11 = Color(0xffBBBBBB);
+  static const Color PRIMARY12 = Color(0xff21003D);
 }

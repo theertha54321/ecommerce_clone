@@ -1,6 +1,7 @@
 import 'package:ecommerce_clone/utils/color_constants.dart';
 import 'package:ecommerce_clone/utils/image_constants.dart';
 import 'package:ecommerce_clone/view/global_widgets/custom_button.dart';
+import 'package:ecommerce_clone/view/home_screen/home_screen.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter/widgets.dart';
 import 'package:google_fonts/google_fonts.dart';
@@ -62,7 +63,9 @@ class GetStartedScreen extends StatelessWidget {
                     ),
                     SizedBox(height: 44,),
                     CustomButton(data: "Get Started",onButtonPressed: (){
-
+                      Navigator.pushReplacement(context, MaterialPageRoute(builder: (context)=>HomeScreen()
+                      )
+                      );
 
                     },)
                 ],
